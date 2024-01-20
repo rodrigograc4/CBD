@@ -1,0 +1,33 @@
+SET nome "João"
+
+GET nome
+
+HSET usuario1 nome "Maria"
+
+HGET usuario1 nome
+
+LPUSH tarefas "Comprar leite"
+
+RPUSH tarefas "Fazer exercícios"
+
+LRANGE tarefas 0 -1
+
+SADD interesses "Futebol"
+
+SMEMBERS interesses
+
+ZADD pontuacoes 100 "Alice"
+
+ZADD pontuacoes 150 "Bob"
+
+ZRANGE pontuacoes 0 -1
+
+INCR visitas_pagina
+
+DECR estoque_produto1
+
+MSET empresa "ABC Inc" fundacao "1990"
+
+HDEL usuario1 nome
+
+DEL nome

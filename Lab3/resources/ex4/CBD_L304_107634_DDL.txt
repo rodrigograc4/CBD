@@ -1,0 +1,52 @@
+CREATE KEYSPACE IF NOT EXISTS mario_kart_ex4 WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+USE mario_kart_ex4;
+
+DROP TABLE IF EXISTS characters;
+CREATE TABLE characters (
+    id int,
+    name text,
+    handling int,
+    primary key(id)
+);
+
+DROP TABLE IF EXISTS vehicles;
+CREATE TABLE vehicles (
+    id int,
+    racer_id int,
+    vehicle text,
+    speed int,
+    acceleration int,
+    primary key(id)
+);
+
+DROP TABLE IF EXISTS items;
+CREATE TABLE items (
+    name text,
+    description text,
+    primary key(name)
+);
+
+DROP TABLE IF EXISTS courses;
+CREATE TABLE courses (
+    name text,
+    difficulty text,
+    laps int,
+    primary key(name)
+);
+
+DROP TABLE IF EXISTS power_ups;
+CREATE TABLE power_ups (
+    name text,
+    type text,
+    effect text,
+    primary key(name)
+);
+
+DROP TABLE IF EXISTS rankings;
+CREATE TABLE rankings (
+    course_name text,
+    racer_id int,
+    position int,
+    primary key(course_name, position)
+);
+

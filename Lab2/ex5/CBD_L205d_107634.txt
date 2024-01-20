@@ -1,0 +1,148 @@
+findCapicuas.js
+
+Número Capicua: 99399, Quantidade de vezes: 1
+Número Capicua: 99499, Quantidade de vezes: 1
+Número Capicua: 99599, Quantidade de vezes: 1
+Número Capicua: 99699, Quantidade de vezes: 1
+Número Capicua: 99799, Quantidade de vezes: 1
+Número Capicua: 99899, Quantidade de vezes: 1
+Número Capicua: 99999, Quantidade de vezes: 1
+Número Capicua: 100001, Quantidade de vezes: 1
+Número Capicua: 101101, Quantidade de vezes: 1
+Número Capicua: 102201, Quantidade de vezes: 1
+Número Capicua: 103301, Quantidade de vezes: 1
+Número Capicua: 104401, Quantidade de vezes: 1
+Número Capicua: 105501, Quantidade de vezes: 1
+Número Capicua: 106601, Quantidade de vezes: 1
+Número Capicua: 107701, Quantidade de vezes: 1
+Número Capicua: 108801, Quantidade de vezes: 1
+Número Capicua: 109901, Quantidade de vezes: 1
+Número Capicua: 110011, Quantidade de vezes: 1
+Número Capicua: 111111, Quantidade de vezes: 1
+Número Capicua: 112211, Quantidade de vezes: 1
+Número Capicua: 113311, Quantidade de vezes: 1
+Número Capicua: 114411, Quantidade de vezes: 1
+Número Capicua: 115511, Quantidade de vezes: 1
+Número Capicua: 116611, Quantidade de vezes: 1
+Número Capicua: 117711, Quantidade de vezes: 1
+Número Capicua: 118811, Quantidade de vezes: 1
+Número Capicua: 119911, Quantidade de vezes: 1
+Número Capicua: 120021, Quantidade de vezes: 1
+Número Capicua: 121121, Quantidade de vezes: 1
+Número Capicua: 122221, Quantidade de vezes: 1
+Número Capicua: 123321, Quantidade de vezes: 1
+Número Capicua: 124421, Quantidade de vezes: 1
+Número Capicua: 125521, Quantidade de vezes: 1
+Número Capicua: 126621, Quantidade de vezes: 1
+Número Capicua: 127721, Quantidade de vezes: 1
+Número Capicua: 128821, Quantidade de vezes: 1
+Número Capicua: 129921, Quantidade de vezes: 1
+Número Capicua: 130031, Quantidade de vezes: 1
+Número Capicua: 131131, Quantidade de vezes: 1
+Número Capicua: 132231, Quantidade de vezes: 1
+Número Capicua: 133331, Quantidade de vezes: 1
+Número Capicua: 134431, Quantidade de vezes: 1
+Número Capicua: 135531, Quantidade de vezes: 1
+Número Capicua: 136631, Quantidade de vezes: 1
+Número Capicua: 137731, Quantidade de vezes: 1
+Número Capicua: 138831, Quantidade de vezes: 1
+Número Capicua: 139931, Quantidade de vezes: 1
+Número Capicua: 140041, Quantidade de vezes: 1
+Número Capicua: 141141, Quantidade de vezes: 1
+Número Capicua: 142241, Quantidade de vezes: 1
+Número Capicua: 143341, Quantidade de vezes: 1
+Número Capicua: 144441, Quantidade de vezes: 1
+Número Capicua: 145541, Quantidade de vezes: 1
+Número Capicua: 146641, Quantidade de vezes: 1
+Número Capicua: 147741, Quantidade de vezes: 1
+Número Capicua: 148841, Quantidade de vezes: 1
+Número Capicua: 149941, Quantidade de vezes: 1
+Número Capicua: 150051, Quantidade de vezes: 1
+Número Capicua: 151151, Quantidade de vezes: 1
+Número Capicua: 152251, Quantidade de vezes: 1
+Número Capicua: 153351, Quantidade de vezes: 1
+Número Capicua: 154451, Quantidade de vezes: 1
+Número Capicua: 155551, Quantidade de vezes: 1
+Número Capicua: 156651, Quantidade de vezes: 1
+Número Capicua: 157751, Quantidade de vezes: 1
+Número Capicua: 158851, Quantidade de vezes: 1
+Número Capicua: 159951, Quantidade de vezes: 1
+Número Capicua: 160061, Quantidade de vezes: 1
+Número Capicua: 161161, Quantidade de vezes: 1
+Número Capicua: 162261, Quantidade de vezes: 1
+Número Capicua: 163361, Quantidade de vezes: 1
+Número Capicua: 164461, Quantidade de vezes: 1
+Número Capicua: 165561, Quantidade de vezes: 1
+Número Capicua: 166661, Quantidade de vezes: 1
+Número Capicua: 167761, Quantidade de vezes: 1
+Número Capicua: 168861, Quantidade de vezes: 1
+Número Capicua: 169961, Quantidade de vezes: 1
+Número Capicua: 170071, Quantidade de vezes: 1
+Número Capicua: 171171, Quantidade de vezes: 1
+Número Capicua: 172271, Quantidade de vezes: 1
+Número Capicua: 173371, Quantidade de vezes: 1
+Número Capicua: 174471, Quantidade de vezes: 1
+Número Capicua: 175571, Quantidade de vezes: 1
+Número Capicua: 176671, Quantidade de vezes: 1
+Número Capicua: 177771, Quantidade de vezes: 1
+Número Capicua: 178871, Quantidade de vezes: 1
+Número Capicua: 179971, Quantidade de vezes: 1
+Número Capicua: 180081, Quantidade de vezes: 1
+Número Capicua: 181181, Quantidade de vezes: 1
+Número Capicua: 182281, Quantidade de vezes: 1
+Número Capicua: 183381, Quantidade de vezes: 1
+Número Capicua: 184481, Quantidade de vezes: 1
+Número Capicua: 185581, Quantidade de vezes: 1
+Número Capicua: 186681, Quantidade de vezes: 1
+Número Capicua: 187781, Quantidade de vezes: 1
+Número Capicua: 188881, Quantidade de vezes: 1
+Número Capicua: 189981, Quantidade de vezes: 1
+Número Capicua: 190091, Quantidade de vezes: 1
+Número Capicua: 191191, Quantidade de vezes: 1
+Número Capicua: 192291, Quantidade de vezes: 1
+Número Capicua: 193391, Quantidade de vezes: 1
+Número Capicua: 194491, Quantidade de vezes: 1
+Número Capicua: 195591, Quantidade de vezes: 1
+Número Capicua: 196691, Quantidade de vezes: 1
+Número Capicua: 197791, Quantidade de vezes: 1
+Número Capicua: 198891, Quantidade de vezes: 1
+Número Capicua: 199991, Quantidade de vezes: 1
+true
+
+
+
+
+findSequences.js
+
+Sequência: 12, Quantidade de vezes: 15940
+Sequência: 23, Quantidade de vezes: 5940
+Sequência: 34, Quantidade de vezes: 6840
+Sequência: 45, Quantidade de vezes: 6840
+Sequência: 56, Quantidade de vezes: 6840
+Sequência: 67, Quantidade de vezes: 6840
+Sequência: 78, Quantidade de vezes: 6840
+Sequência: 89, Quantidade de vezes: 7400
+Sequência: 123, Quantidade de vezes: 1432
+Sequência: 234, Quantidade de vezes: 432
+Sequência: 345, Quantidade de vezes: 522
+Sequência: 456, Quantidade de vezes: 522
+Sequência: 567, Quantidade de vezes: 522
+Sequência: 678, Quantidade de vezes: 522
+Sequência: 789, Quantidade de vezes: 560
+Sequência: 1234, Quantidade de vezes: 127
+Sequência: 2345, Quantidade de vezes: 27
+Sequência: 3456, Quantidade de vezes: 36
+Sequência: 4567, Quantidade de vezes: 36
+Sequência: 5678, Quantidade de vezes: 36
+Sequência: 6789, Quantidade de vezes: 38
+Sequência: 12345, Quantidade de vezes: 11
+Sequência: 23456, Quantidade de vezes: 1
+Sequência: 34567, Quantidade de vezes: 2
+Sequência: 45678, Quantidade de vezes: 2
+Sequência: 56789, Quantidade de vezes: 2
+Sequência: 123456, Quantidade de vezes: 1
+Sequência: 01, Quantidade de vezes: 6400
+Sequência: 012, Quantidade de vezes: 460
+Sequência: 0123, Quantidade de vezes: 28
+Sequência: 01234, Quantidade de vezes: 1
+true

@@ -1,0 +1,130 @@
+// NMEC: 107634
+
+#1
+
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)<-[:DIRECTED]-(p)
+RETURN p.name AS Actor, m.title AS Movie
+
+#2
+
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WHERE m.released > 2005
+RETURN p.name AS Actor, m.title AS Movie, m.released AS Released
+
+#3
+
+MATCH (a)-[r]-(b)
+WITH DISTINCT a,b,count(r) AS Num_Rel
+WHERE Num_Rel > 1
+RETURN a,b; 
+
+#4
+
+MATCH (p1:Person)-[:REVIEWED]->(m:Movie)<-[:REVIEWED]-(p2:Person)
+WHERE p1 <> p2
+RETURN p1.name AS Actor1, p2.name AS Actor2, m.title AS Movie
+
+#5
+
+MATCH (p1:Person)-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(p2:Person)
+WHERE p1 <> p2
+WITH p1,p2,count(m) AS Num_Movies WHERE Num_Movies > 1
+RETURN p1.name AS Actor1, p2.name AS Actor2, Num_Movies
+
+#6
+
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie {title: 'Apollo 13'})
+WITH m,avg(m.released - p.born) AS Avg_Age
+RETURN m.title AS Movie, m,avg(m.released - p.born) AS Avg_Age
+
+#7
+
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WITH m, avg(m.released - p.born) AS Avg_Age
+RETURN m.title AS Movie, round(Avg_Age, 2) AS Avg_Age_Rounded
+ORDER BY Avg_Age_Rounded DESC
+LIMIT 10
+
+#8
+
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WITH m, round(avg(m.released - p.born), 2) AS Avg_Age_Rounded
+ORDER BY Avg_Age_Rounded ASC
+LIMIT 1
+MATCH (p:Person)-[:ACTED_IN]->(m) RETURN m,p
+
+#9
+
+MATCH p = shortestPath((john:Person {name: 'John Cusack'})-[*]-(demi:Person {name: 'Demi Moore'}))
+RETURN p
+
+
+#10
+
+MATCH p = shortestPath((keanu:Person {name: 'Keanu Reeves'})-[*]-(tom:Person {name: 'Tom Cruise'}))
+RETURN size(nodes(p)) AS Shortest_Path
+
+#11
+
+MATCH p = shortestPath((p1:Person)-[*]-(p2:Person)) WHERE p1.name CONTAINS "Jim" AND p2.name CONTAINS "Kevin"
+RETURN size(nodes(p)) AS Shortest_Path
+
+#12
+
+MATCH (jim:Person {name: 'Jim Cash'})-[*2]-(otherPerson:Person)
+RETURN otherPerson
+
+#13
+
+MATCH p = shortestPath((p1:Person)-[*]-(kevin:Person {name: "Kevin Bacon"})) WHERE p1 <> kevin
+RETURN count(nodes(p)) AS Distance
+
+#14
+
+MATCH (p1:Person), (p2:Person)
+WHERE p1 <> p2
+RETURN max(length(shortestPath((p1)-[*]-(p2)))) AS MaxDistance
+
+#15
+
+MATCH (p1:Person), (p2:Person)
+WHERE p1 <> p2
+WITH p1, p2, length(shortestPath((p1)-[*]-(p2))) AS Distance
+RETURN Distance, count(*) AS Count
+ORDER BY Distance
+
+#16
+
+MATCH p = shortestPath((p1:Person)-[:ACTED_IN*]-(p2:Person))
+WHERE p1 <> p2
+WITH avg(length(p)) AS Avg_Lenght, p1
+RETURN p1.name AS Person, Avg_Lenght
+LIMIT 10
+
+#17
+
+MATCH (p:Person)-[r:ACTED_IN]->(m:Movie)
+WHERE ANY(role in r.roles
+WHERE role STARTS WITH "Dr.")
+RETURN p.name AS Ator, Collect(DISTINCT r.roles) AS Roles
+
+#18 - FIND THE HIGHEST RATE, AND RETURN THE MOVIE, THE REVIEWER, THE RATE AND ITS SUMMARY
+
+MATCH (reviewer:Person)-[review:REVIEWED]-(movie:Movie)
+WITH MAX(review.rating) AS maxRating
+MATCH (r:Person)-[review:REVIEWED]-(m:Movie)
+WHERE review.rating = maxRating
+RETURN m.title AS Movie, r.name AS Reviewer, review.rating AS Rating, review.summary AS Summary
+
+#19 - EVERYONE THAT ACTED IN MOVIES THAT WERE DIRECTED BY "Mike Nichols"
+
+MATCH (p1:Person)-[:ACTED_IN]->(m:Movie)<-[:DIRECTED]-(p2:Person)
+WHERE p2.name = "Mike Nichols"
+RETURN p1 AS Actors
+
+#20 - ALL MOVIES RELEASED AFTER 2010
+
+MATCH (m:Movie)<-[r:REVIEWED]-(p:Person)
+WHERE m.released > 2010 
+WITH m AS Movies
+RETURN Movies

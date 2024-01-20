@@ -1,0 +1,7 @@
+Limite máximo de 10 unidades de produtos por utilizador por 1 minutos:
+
+Pedido atendido para user1 - product1 (Quantidade: 4)
+Pedido atendido para user2 - product2 (Quantidade: 6)
+
+Relatório para user1 - 4 unidades: 6 pedidos.
+Relatório para user2 - 6 unidades: 4 pedidos.

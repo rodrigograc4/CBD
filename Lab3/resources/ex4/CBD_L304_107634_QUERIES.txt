@@ -1,0 +1,75 @@
+ALTER TABLE characters
+ADD special_skills set<text>;
+
+ALTER TABLE vehicles
+ADD characteristics list<text>;
+
+ALTER TABLE items
+ADD descriptions map<text, text>;
+
+ALTER TABLE courses
+ADD associated_power_ups set<text>;
+
+ALTER TABLE power_ups
+ADD associated_courses list<text>;
+
+
+
+UPDATE characters SET special_skills = {'Super Jump', 'Fireball Throw'} WHERE id = 1;
+
+UPDATE vehicles SET characteristics = ['Aero Dynamic', 'Off-road Tires'] WHERE id = 1;
+
+UPDATE items SET descriptions = {'en': 'Provides a speed boost.', 'es': 'Ofrece un impulso de velocidad.'} WHERE name = 'Mushroom';
+
+UPDATE courses SET associated_power_ups = {'Mushroom', 'Star'} WHERE name = 'Moo Moo Meadows';
+
+UPDATE power_ups SET associated_courses = ['Moo Moo Meadows', 'Delfino Pier'] WHERE name = 'Lightning Bolt';
+
+
+
+DROP INDEX IF EXISTS characters_handling;
+CREATE INDEX characters_handling ON characters(handling);
+
+DROP INDEX IF EXISTS power_ups_type;
+CREATE INDEX power_ups_type ON power_ups_type(type);
+
+
+DELETE FROM characters WHERE id = 6;
+DELETE FROM vehicles WHERE id = 9;
+DELETE FROM items WHERE name = 'Fire Flower';
+DELETE FROM courses WHERE name = 'Shroom Ridge';
+DELETE FROM power_ups WHERE name = 'Thundercloud';
+
+
+-- 1: Recuperar todos os personagens com manipulação maior que 2
+SELECT * FROM characters WHERE handling > 2 ALLOW FILTERING;
+
+-- 2: Listar os veículos com aceleração igual a 3
+SELECT * FROM vehicles WHERE acceleration = 3;
+
+-- 3: Obter os itens que começam com a letra 'B'
+SELECT * FROM items WHERE name >= 'B' AND name < 'C' ALLOW FILTERING;
+
+-- 4: Encontrar os cursos com dificuldade 'Medium'
+SELECT * FROM courses WHERE difficulty = 'Medium' ALLOW FILTERING;
+
+-- 5: Recuperar power-ups do tipo 'Mushroom'
+SELECT * FROM power_ups WHERE type = 'Mushroom' ALLOW FILTERING;
+
+-- 6: Listar os personagens em ordem alfabética de nome
+SELECT * FROM characters;
+
+-- 7: Obter detalhes dos veículos com velocidade entre 3 e 4
+SELECT * FROM vehicles WHERE speed >= 3 AND speed <= 4 ALLOW FILTERING;
+
+-- 8: Recuperar os cursos com mais de 2 voltas
+SELECT * FROM courses WHERE laps > 2 ALLOW FILTERING;
+
+-- 9: Listar power-ups do tipo 'Shell'
+SELECT * FROM power_ups WHERE type = 'Shell' ALLOW FILTERING;
+
+-- 10: Obter os 3 primeiros colocados em cada corrida
+SELECT * FROM rankings WHERE position = 1 ALLOW FILTERING;
+
+-- 11: Obter os cursos com dificuldade 'Easy' e 3 voltas
+SELECT * FROM courses WHERE difficulty = 'Easy' AND laps = 3 ALLOW FILTERING;

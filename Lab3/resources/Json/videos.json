@@ -1,0 +1,16 @@
+SELECT JSON * FROM videos;
+
+ [json]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         {"id": 5, "ts": "2023-11-25 16:42:11.414Z", "author": "pedroalmeida", "description": "Dominei o último jogo!", "name": "Gamer Profissional", "tags": ["gaming", "pro"]}
+ {"id": 10, "ts": "2023-11-25 16:42:11.426Z", "author": "davidsousa", "description": "Investigação de casos misteriosos", "name": "Desvendando Mistérios", "tags": ["investigação", "mistério"]}
+               {"id": 1, "ts": "2023-11-25 16:42:11.405Z", "author": "joaosilva", "description": "Explorando planetas distantes", "name": "Aventuras no Espaço", "tags": ["aventura", "espaço"]}
+       {"id": 8, "ts": "2023-11-25 16:42:11.421Z", "author": "ricardosilva", "description": "Experimentando comidas exóticas", "name": "Desafio Gastronômico", "tags": ["culinária", "desafio"]}
+             {"id": 2, "ts": "2023-11-25 16:42:11.408Z", "author": "mariagomes", "description": "Cozinhando pratos incríveis", "name": "Receitas Deliciosas", "tags": ["culinária", "receitas"]}
+             {"id": 4, "ts": "2023-11-25 16:42:11.412Z", "author": "anacarvalho", "description": "Descobrindo belas paisagens", "name": "Passeio pela Natureza", "tags": ["natureza", "viagem"]}
+                       {"id": 7, "ts": "2023-11-25 16:42:11.418Z", "author": "inesoliveira", "description": "Criações artísticas incríveis", "name": "Arte em Papel", "tags": ["arte", "papel"]}
+                     {"id": 6, "ts": "2023-11-25 16:42:11.416Z", "author": "andreasantos", "description": "Treino para manter a forma", "name": "Fitness em Casa", "tags": ["fitness", "saúde"]}
+      {"id": 9, "ts": "2023-11-25 16:42:11.424Z", "author": "susanarodrigues", "description": "Minhas experiências ao redor do mundo", "name": "Diário de Viagem", "tags": ["diário", "viagem"]}
+          {"id": 3, "ts": "2023-11-25 16:42:11.410Z", "author": "carlospereira", "description": "Dicas para fotos incríveis", "name": "Segredos da Fotografia", "tags": ["dicas", "fotografia"]}
+
+(10 rows)

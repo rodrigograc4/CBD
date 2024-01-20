@@ -1,0 +1,236 @@
+# Codigo usado:
+
+test> use mydb
+switched to db mydb
+
+mydb> db
+mydb
+
+mydb> show dbs
+admin    40.00 KiB
+config  108.00 KiB
+local    40.00 KiB
+
+mydb> db.movie.insert({"name":"Homem Aranha"})
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("6515a2e65f823e88b69c094f") }
+}
+
+mydb> db.createCollection("Meus Filmes")
+{ ok: 1 }
+
+mydb> show collections
+Meus Filmes
+movie
+
+mydb> db.createCollection("mycollection")
+{ ok: 1 }
+
+mydb> db.mycollection.drop()
+true
+
+mydb> db.createCollection("post")
+{ ok: 1 }
+
+mydb> db.post.insert([
+... 	{
+... 		title: "MongoDB Overview",
+... 		description: "MongoDB is no SQL database",
+... 		by: "tutorials point",
+... 		url: "http://www.tutorialspoint.com",
+... 		tags: ["mongodb", "database", "NoSQL"],
+... 		likes: 100
+... 	},
+... 	{
+... 	title: "NoSQL Database",
+... 	description: "NoSQL database doesn't have tables",
+... 	by: "tutorials point",
+... 	url: "http://www.tutorialspoint.com",
+... 	tags: ["mongodb", "database", "NoSQL"],
+... 	likes: 20,
+... 	comments: [
+... 		{
+... 			user:"user1",
+... 			message: "My first comment",
+... 			dateCreated: new Date(2013,11,10,2,35),
+... 			like: 0
+... 		}
+... 	]
+... }
+... ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("6515a6b05f823e88b69c0950"),
+    '1': ObjectId("6515a6b05f823e88b69c0951")
+  }
+}
+
+mydb> db.empDetails.insertOne(
+... 	{
+... 		First_Name: "Radhika",
+... 		Last_Name: "Sharma",
+... 		Date_Of_Birth: "1995-09-26",
+... 		e_mail: "radhika_sharma.123@gmail.com",
+... 		phone: "9848022338"
+... 	})
+{
+  acknowledged: true,
+  insertedId: ObjectId("6515a7565f823e88b69c0952")
+}
+
+mydb>  db.empDetails.insertMany(
+... 	[
+... 		{
+... 			First_Name: "Radhika",
+... 			Last_Name: "Sharma",
+... 			Date_Of_Birth: "1995-09-26",
+... 			e_mail: "radhika_sharma.123@gmail.com",
+... 			phone: "9000012345"
+... 		},
+... 		{
+... 			First_Name: "Rachel",
+... 			Last_Name: "Christopher",
+... 			Date_Of_Birth: "1990-02-16",
+... 			e_mail: "Rachel_Christopher.123@gmail.com",
+... 			phone: "9000054321"
+... 		},
+... 		{
+... 			First_Name: "Fathima",
+... 			Last_Name: "Sheik",
+... 			Date_Of_Birth: "1990-02-16",
+... 			e_mail: "Fathima_Sheik.123@gmail.com",
+... 			phone: "9000054321"
+... 		}
+... 	]
+... )
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("6515a7a85f823e88b69c0953"),
+    '1': ObjectId("6515a7a85f823e88b69c0954"),
+    '2': ObjectId("6515a7a85f823e88b69c0955")
+  }
+}
+
+mydb> db.empDetails.find()
+[
+  {
+    _id: ObjectId("6515a7565f823e88b69c0952"),
+    First_Name: 'Radhika',
+    Last_Name: 'Sharma',
+    Date_Of_Birth: '1995-09-26',
+    e_mail: 'radhika_sharma.123@gmail.com',
+    phone: '9848022338'
+  },
+  {
+    _id: ObjectId("6515a7a85f823e88b69c0953"),
+    First_Name: 'Radhika',
+    Last_Name: 'Sharma',
+    Date_Of_Birth: '1995-09-26',
+    e_mail: 'radhika_sharma.123@gmail.com',
+    phone: '9000012345'
+  },
+  {
+    _id: ObjectId("6515a7a85f823e88b69c0954"),
+    First_Name: 'Rachel',
+    Last_Name: 'Christopher',
+    Date_Of_Birth: '1990-02-16',
+    e_mail: 'Rachel_Christopher.123@gmail.com',
+    phone: '9000054321'
+  },
+  {
+    _id: ObjectId("6515a7a85f823e88b69c0955"),
+    First_Name: 'Fathima',
+    Last_Name: 'Sheik',
+    Date_Of_Birth: '1990-02-16',
+    e_mail: 'Fathima_Sheik.123@gmail.com',
+    phone: '9000054321'
+  }
+]
+
+mydb> db.empDetails.findOne({First_Name:"Radhika"})
+{
+  _id: ObjectId("6515a7565f823e88b69c0952"),
+  First_Name: 'Radhika',
+  Last_Name: 'Sharma',
+  Date_Of_Birth: '1995-09-26',
+  e_mail: 'radhika_sharma.123@gmail.com',
+  phone: '9848022338'
+}
+
+mydb> db.empDetails.update({'Last_Name':'Sharma'},{$set:{'Last_Name':'Filipa'}})
+DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+mydb> db.empDetails.findOne({First_Name:"Radhika"})
+{
+  _id: ObjectId("6515a7565f823e88b69c0952"),
+  First_Name: 'Radhika',
+  Last_Name: 'Filipa',
+  Date_Of_Birth: '1995-09-26',
+  e_mail: 'radhika_sharma.123@gmail.com',
+  phone: '9848022338'
+}
+
+mydb> db.empDetails.updateMany( { Date_Of_Birth: { $gt: "1990-02-16" } }, { $set: { Date_Of_Birth: "2020-02-05" } })
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+
+mydb> db.empDetails.deleteOne( { First_Name: "Radhika" } )
+{ acknowledged: true, deletedCount: 1 }
+
+mydb> db.empDetails.drop()
+true
+
+mydb> db.dropDatabase()
+{ ok: 1, dropped: 'mydb' }
+
+
+-----------------------------------------------------------------
+
+# Notas:
+- use "mydb" : If you want to use a database with name <mydb>
+- db : If you want to know the database you are using
+- show dbs : If you want to know the databases you have
+- db.movie.insert({"name":"Homem Aranha"}) : If you want to insert a document in a collection called "movie" with a field called "name" and value "Homem Aranha"
+- db.createCollection("Meus Filmes") : If you want to create a collection called "Meus Filmes"
+- show collections : If you want to know the collections you have
+- db.mycollection.drop() : If you want to delete a collection called "mycollection"
+- db.post.insert([ ...]): To insert data into MongoDB collection
+- db.empDetails.insertOne( ...): If you need to insert only one document into a collectio
+- db.empDetails.insertMany( ...): You can insert multiple documents 
+- db.empDetails.find() : To display all the documents in a collection
+- db.empDetails.find().pretty() : To display all the documents in a collection in a formatted way
+- db.empDetails.findOne({First_Name:"Radhika"}) : To display all the documents in a collection where First_Name is "Radhika"
+- db.empDetails.update({'Last_Name':'Sharma'},{$set:{'Last_Name':'Filipa'}}) : To update a document in a collection where Last_Name is "Sharma" and change it to "Filipa"
+- db.empDetails.updateMany( { Date_Of_Birth: { $gt: "1990-02-16" } }, { $set: { Date_Of_Birth: "2020-02-05" } }) : To update multiple documents in a collection where Date_Of_Birth is greater than "1990-02-16" and change it to "2020-02-05"
+- db.empDetails.deleteOne( { First_Name: "Radhika" } ) : To delete a document in a collection where First_Name is "Radhika"
+- db.empDetails.deleteMany( { First_Name: "Radhika" } ) : To delete multiple documents in a collection where First_Name is "Radhika"
+- db.empDetails.drop() : To delete a collection called "empDetails"
+- db.dropDatabase() : To delete a database called "mydb"
+
+
+$gt = greater than (maior que)
+$gte = greater or equal than (maior ou igual a)
+$lt = lesser then (menor do que)
+$lte = lesser or equal than (menor ou igual a)
+$ne = not equal (diferente de)
+$in = inside an array of values [a,b]
+$nin = outside an array of values [^a,^b]
+$and = logical and between two conditions 
+$not = negation of condition 
+$nor = nor operation between two conditions 

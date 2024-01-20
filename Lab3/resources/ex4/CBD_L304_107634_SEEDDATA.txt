@@ -1,0 +1,92 @@
+// INSERT NA TABELA CHARACTERS
+INSERT INTO characters (id, name, handling) VALUES (1, 'Mario', 3);
+INSERT INTO characters (id, name, handling) VALUES (2, 'Luigi', 3);
+INSERT INTO characters (id, name, handling) VALUES (3, 'Princess Peach', 2);
+INSERT INTO characters (id, name, handling) VALUES (4, 'Yoshi', 3);
+INSERT INTO characters (id, name, handling) VALUES (5, 'Toad', 4);
+INSERT INTO characters (id, name, handling) VALUES (6, 'Bowser', 2);
+INSERT INTO characters (id, name, handling) VALUES (7, 'Donkey Kong', 1);
+INSERT INTO characters (id, name, handling) VALUES (8, 'Princess Daisy', 2);
+INSERT INTO characters (id, name, handling) VALUES (9, 'Wario', 3);
+INSERT INTO characters (id, name, handling) VALUES (10, 'Toadette', 4);
+INSERT INTO characters (id, name, handling) VALUES (11, 'Koopa Troopa', 3);
+INSERT INTO characters (id, name, handling) VALUES (12, 'Shy Guy', 2);
+
+// INSERT NA TABELA VEHICLES
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (1, 3, 'Standard Kart', 3, 3);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (2, 5, 'Mach 8', 4, 2);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (3, 12, 'Prancer', 3, 4);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (4, 1, 'Egg 1', 4, 3);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (5, 4, 'City Tripper', 3, 5);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (6, 7, 'Badwagon', 2, 2);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (7, 8, 'Wild Wiggler', 3, 1);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (8, 11, 'Standard Bike', 4, 3);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (9, 2, 'Wario Bike', 2, 2);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (10, 6, 'Sneeker', 4, 4);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (11, 9, 'Koopa Dasher', 3, 3);
+INSERT INTO vehicles (id, racer_id, vehicle, speed, acceleration) VALUES (12, 10, 'Standard ATV', 2, 4);
+
+// INSERT NA TABELA ITEMS
+
+INSERT INTO items (name, description) VALUES ('Mushroom', 'Provides a speed boost.');
+INSERT INTO items (name, description) VALUES ('Star', 'Makes the racer invincible for a short duration.');
+INSERT INTO items (name, description) VALUES ('Red Shell', 'Homes in on the racer in front and knocks them over.');
+INSERT INTO items (name, description) VALUES ('Banana Peel', 'Dropped on the track to make racers slip and spin out.');
+INSERT INTO items (name, description) VALUES ('Bullet Bill', 'Transforms the racer into a fast-moving Bullet Bill for a short time.');
+INSERT INTO items (name, description) VALUES ('Green Shell', 'Can be thrown forward or backward to knock over a racer.');
+INSERT INTO items (name, description) VALUES ('Bob-omb', 'Explodes after a short delay, knocking over nearby racers.');
+INSERT INTO items (name, description) VALUES ('Boomerang Flower', 'Can be thrown forward and backward to hit racers multiple times.');
+INSERT INTO items (name, description) VALUES ('Super Star', 'Makes the racer invincible and increases speed temporarily.');
+INSERT INTO items (name, description) VALUES ('Blooper', 'Sprays ink on the screens of other racers, obstructing their view.');
+INSERT INTO items (name, description) VALUES ('Fire Flower', 'Allows the racer to throw fireballs at other racers.');
+
+
+// INSERT NA TABELA COURSES 
+
+INSERT INTO courses (name, difficulty, laps) VALUES ('Wario Stadium', 'Hard', 3);
+INSERT INTO courses (name, difficulty, laps) VALUES ('Moo Moo Meadows', 'Easy', 3);
+INSERT INTO courses (name, difficulty, laps) VALUES ('Bowser Castle', 'Hard', 3);
+INSERT INTO courses (name, difficulty, laps) VALUES ('Rainbow Road', 'Expert', 3);
+INSERT INTO courses (name, difficulty, laps) VALUES ('Delfino Pier', 'Medium', 3);
+INSERT INTO courses (name, difficulty, laps) VALUES ('Shroom Ridge', 'Easy', 3);
+INSERT INTO courses (name, difficulty, laps) VALUES ('Luigi Circuit', 'Medium', 3);
+INSERT INTO courses (name, difficulty, laps) VALUES ('Toad Harbor', 'Hard', 3);
+
+
+// INSERT NA TABELA POWER UPS 
+
+INSERT INTO power_ups (name, type, effect) VALUES ('Lightning Bolt', 'Lightning', 'Shrinks all other racers temporarily.');
+INSERT INTO power_ups (name, type, effect) VALUES ('Blue Shell', 'Shell', 'Targets the racer in first place and causes them to spin out.');
+INSERT INTO power_ups (name, type, effect) VALUES ('Golden Mushroom', 'Mushroom', 'Provides multiple speed boosts for a short duration.');
+INSERT INTO power_ups (name, type, effect) VALUES ('Super Horn', 'Horn', 'Creates a shockwave to destroy nearby projectiles and knock over nearby racers.');
+INSERT INTO power_ups (name, type, effect) VALUES ('Thundercloud', 'Lightning', 'Passes over the racer and shrinks them, but can be passed on to another racer by colliding with them.');
+INSERT INTO power_ups (name, type, effect) VALUES ('Super Leaf', 'Leaf', 'Attaches to the back of the racers kart and can be used to swipe at opponents.');
+INSERT INTO power_ups (name, type, effect) VALUES ('Triple Bananas', 'Banana', 'Provides three bananas to be dropped on the track as obstacles.');
+INSERT INTO power_ups (name, type, effect) VALUES ('Bullet Bill', 'Special', 'Automatically transforms the racer into a Bullet Bill and travels along the track at high speed.');
+INSERT INTO power_ups (name, type, effect) VALUES ('Lucky 7', 'Miscellaneous', 'Gives the racer seven items that orbit around them and can be used strategically.');
+
+// INSERT NA TABELA RANKINGS 
+
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Wario Stadium', 7, 1);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Wario Stadium', 4, 2);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Wario Stadium', 10, 3);
+
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Moo Moo Meadows', 1, 1);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Moo Moo Meadows', 9, 2);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Moo Moo Meadows', 6, 3);
+
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Bowser Castle', 3, 1);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Bowser Castle', 11, 2);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Bowser Castle', 8, 3);
+
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Rainbow Road', 5, 1);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Rainbow Road', 2, 2);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Rainbow Road', 12, 3);
+
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Delfino Pier', 1, 1);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Delfino Pier', 7, 2);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Delfino Pier', 4, 3);
+
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Shroom Ridge', 8, 1);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Shroom Ridge', 10, 2);
+INSERT INTO rankings (course_name, racer_id, position) VALUES ('Shroom Ridge', 3, 3);

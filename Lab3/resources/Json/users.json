@@ -1,0 +1,16 @@
+SELECT JSON * FROM users;
+
+ [json]
+----------------------------------------------------------------------------------------------------------------------------------------
+          {"username": "ricardosilva", "email": "ricardo.silva@example.com", "name": "Ricardo Silva", "ts": "2023-11-25 16:42:11.398Z"}
+ {"username": "susanarodrigues", "email": "susana.rodrigues@example.com", "name": "Susana Rodrigues", "ts": "2023-11-25 16:42:11.400Z"}
+             {"username": "anacarvalho", "email": "ana.carvalho@example.com", "name": "Ana Carvalho", "ts": "2023-11-25 16:42:11.390Z"}
+                {"username": "davidsousa", "email": "david.sousa@example.com", "name": "David Sousa", "ts": "2023-11-25 16:42:11.402Z"}
+          {"username": "pedroalmeida", "email": "pedro.almeida@example.com", "name": "Pedro Almeida", "ts": "2023-11-25 16:42:11.392Z"}
+          {"username": "inesoliveira", "email": "ines.oliveira@example.com", "name": "Inês Oliveira", "ts": "2023-11-25 16:42:11.396Z"}
+                   {"username": "joaosilva", "email": "joao.silva@example.com", "name": "João Silva", "ts": "2023-11-25 16:42:11.368Z"}
+                {"username": "mariagomes", "email": "maria.gomes@example.com", "name": "Maria Gomes", "ts": "2023-11-25 16:42:11.384Z"}
+            {"username": "andreasantos", "email": "andre.santos@example.com", "name": "André Santos", "ts": "2023-11-25 16:42:11.394Z"}
+       {"username": "carlospereira", "email": "carlos.pereira@example.com", "name": "Carlos Pereira", "ts": "2023-11-25 16:42:11.387Z"}
+
+(10 rows)

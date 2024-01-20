@@ -1,0 +1,16 @@
+SELECT JSON * FROM comments_by_video;
+
+ [json]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+                    {"id_video": 5, "ts": "2023-11-25 16:42:11.565Z", "author": null, "comment": "Parabéns pelo domínio no jogo!", "username": "pedroalmeida"}
+                 {"id_video": 10, "ts": "2023-11-25 16:42:11.574Z", "author": null, "comment": "Estou ansioso para mais mistérios!", "username": "davidsousa"}
+                        {"id_video": 1, "ts": "2023-11-25 16:42:11.558Z", "author": null, "comment": "Que incrível! Adoro o espaço!", "username": "joaosilva"}
+                {"id_video": 8, "ts": "2023-11-25 16:42:11.571Z", "author": null, "comment": "Quero ver mais desafios como esse!", "username": "ricardosilva"}
+    {"id_video": 2, "ts": "2023-11-25 16:42:11.560Z", "author": null, "comment": "Essa receita parece deliciosa, vou experimentar!", "username": "mariagomes"}
+               {"id_video": 4, "ts": "2023-11-25 16:42:11.563Z", "author": null, "comment": "Que paisagem maravilhosa! Onde fica?", "username": "anacarvalho"}
+                   {"id_video": 7, "ts": "2023-11-25 16:42:11.569Z", "author": null, "comment": "Suas criações são inspiradoras!", "username": "inesoliveira"}
+          {"id_video": 6, "ts": "2023-11-25 16:42:11.567Z", "author": null, "comment": "Ótimo treino! Vou tentar em casa também.", "username": "andreasantos"}
+  {"id_video": 9, "ts": "2023-11-25 16:42:11.573Z", "author": null, "comment": "Incríveis aventuras! Continue compartilhando.", "username": "susanarodrigues"}
+ {"id_video": 3, "ts": "2023-11-25 16:42:11.562Z", "author": null, "comment": "Suas dicas de fotografia são valiosas, obrigado!", "username": "carlospereira"}
+
+(10 rows)

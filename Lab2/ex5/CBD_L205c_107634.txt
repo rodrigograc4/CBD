@@ -1,0 +1,7 @@
+Prefix 21: 33335 phones
+Prefix 22: 33337 phones
+Prefix 231: 33273 phones
+Prefix 232: 33387 phones
+Prefix 233: 33430 phones
+Prefix 234: 33238 phones
+true

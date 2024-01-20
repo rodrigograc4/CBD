@@ -1,0 +1,8 @@
+// NMEC: 107634
+
+//https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+// mongoimport --db cbd --collection restaurants --drop --file restaurants.json
+//mongosh
+//use cbd
+//show collections
+//db.restaurants.count()

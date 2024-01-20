@@ -1,0 +1,13 @@
+Limite máximo de 5 produtos por utilizador por 1 minutos:
+
+Pedido atendido para user1 - product1
+Pedido atendido para user2 - product2
+Pedido atendido para user1 - product1
+Pedido atendido para user2 - product2
+Pedido atendido para user1 - product1
+Pedido atendido para user2 - product2
+Pedido atendido para user1 - product1
+Pedido atendido para user2 - product2
+
+Relatório para user1 - product1: 26 pedidos.
+Relatório para user2 - product2: 26 pedidos.

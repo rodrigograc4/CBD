@@ -1,0 +1,16 @@
+SELECT JSON * FROM comments;
+
+ [json]
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+                   {"id": 5, "author": "pedroalmeida", "comment": "Parabéns pelo domínio no jogo!", "id_video": 5, "ts": "2023-11-25 16:42:11.437Z"}
+               {"id": 10, "author": "davidsousa", "comment": "Estou ansioso para mais mistérios!", "id_video": 10, "ts": "2023-11-25 16:42:11.449Z"}
+                   {"id": 1, "author": "carlospereira", "comment": "Que incrível! Adoro o espaço!", "id_video": 1, "ts": "2023-11-25 16:42:11.428Z"}
+               {"id": 8, "author": "ricardosilva", "comment": "Quero ver mais desafios como esse!", "id_video": 8, "ts": "2023-11-25 16:42:11.444Z"}
+  {"id": 2, "author": "anacarvalho", "comment": "Essa receita parece deliciosa, vou experimentar!", "id_video": 2, "ts": "2023-11-25 16:42:11.430Z"}
+               {"id": 4, "author": "mariagomes", "comment": "Que paisagem maravilhosa! Onde fica?", "id_video": 4, "ts": "2023-11-25 16:42:11.434Z"}
+                  {"id": 7, "author": "inesoliveira", "comment": "Suas criações são inspiradoras!", "id_video": 7, "ts": "2023-11-25 16:42:11.441Z"}
+         {"id": 6, "author": "andreasantos", "comment": "Ótimo treino! Vou tentar em casa também.", "id_video": 6, "ts": "2023-11-25 16:42:11.439Z"}
+ {"id": 9, "author": "susanarodrigues", "comment": "Incríveis aventuras! Continue compartilhando.", "id_video": 9, "ts": "2023-11-25 16:42:11.446Z"}
+    {"id": 3, "author": "joaosilva", "comment": "Suas dicas de fotografia são valiosas, obrigado!", "id_video": 3, "ts": "2023-11-25 16:42:11.432Z"}
+
+(10 rows)

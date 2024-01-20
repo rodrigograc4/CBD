@@ -1,0 +1,16 @@
+SELECT JSON * FROM videos_by_author;
+
+ [json]
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                      {"author": "ricardosilva", "ts": "2023-11-25 16:42:11.534Z", "description": "Viajando pelos sabores do mundo", "id": 8, "name": "Tour Gastronômico", "tags": ["culinária", "tour"]}
+    {"author": "susanarodrigues", "ts": "2023-11-25 16:42:11.537Z", "description": "Experiências únicas em diferentes culturas", "id": 9, "name": "Aventuras pelo Mundo", "tags": ["aventura", "viagem"]}
+       {"author": "anacarvalho", "ts": "2023-11-25 16:42:11.527Z", "description": "Descobrindo lugares incríveis em meio à natureza", "id": 4, "name": "Roteiro Natural", "tags": ["natureza", "viagem"]}
+               {"author": "davidsousa", "ts": "2023-11-25 16:42:11.539Z", "description": "Soluções para mistérios intrigantes", "id": 10, "name": "Enigmas Desvendados", "tags": ["enigmas", "mistério"]}
+                {"author": "pedroalmeida", "ts": "2023-11-25 16:42:11.528Z", "description": "Conquistas e desafios no mundo dos games", "id": 5, "name": "Desafios Gamer", "tags": ["desafio", "gaming"]}
+     {"author": "inesoliveira", "ts": "2023-11-25 16:42:11.532Z", "description": "Arte em papel que vai além das dobras convencionais", "id": 7, "name": "Origami Criativo", "tags": ["arte", "origami"]}
+       {"author": "joaosilva", "ts": "2023-11-25 16:42:11.520Z", "description": "Viagem intergaláctica em busca de novos mundos", "id": 1, "name": "Explorando Galáxias", "tags": ["aventura", "espaço"]}
+  {"author": "mariagomes", "ts": "2023-11-25 16:42:11.523Z", "description": "Pratos sofisticados para surpreender seus convidados", "id": 2, "name": "Cozinha Gourmet", "tags": ["culinária", "gourmet"]}
+ {"author": "andreasantos", "ts": "2023-11-25 16:42:11.530Z", "description": "Rotina de exercícios intensos para resultados rápidos", "id": 6, "name": "Treino Explosivo", "tags": ["fitness", "treino"]}
+                    {"author": "carlospereira", "ts": "2023-11-25 16:42:11.524Z", "description": "Capturando a magia da noite", "id": 3, "name": "Fotografia Noturna", "tags": ["fotografia", "noturna"]}
+
+(10 rows)

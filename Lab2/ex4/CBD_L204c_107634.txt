@@ -1,0 +1,49 @@
+Usei um programa Java para verificar o Desempenho de cada solução.
+Esse programa encontra-se no projeto Maven da correspondente solução.
+Os resultados foram os seguintes:
+
+Performance Test (ficheiro java)
+
+    Desempenho do Redis: 280 ms para 10000 operações.
+    Desempenho do MongoDB: 4775 ms para 10000 operações.
+
+Sistema Atendimento A (execution time)
+
+    Tempo total de execução do Redis: 22 ms
+    Tempo total de execução do MongoDB: 57 ms
+
+Sistema Atendimento B (execution time)
+
+    Tempo total de execução do Redis: 36 ms
+    Tempo total de execução do MongoDB: 52 ms
+
+Tal como esperado, num teste de velocidade o Redis ganhará, no entanto não é apenas disso que se trata o desempenho.
+O Redis e o MongoDB são diferentes sistemas de gerenciamento de banco de dados, em que o Redis é mais adequado para armazenar 
+dados chave-valor e o MongoDB é mais para oferecer flexibilidade.
+Aqui estão os seus Pros e Contras:
+
+Redis:
+
+    Prós:
+    - Extremamente rápido devido ao armazenamento em memória
+    - Suporta tipos de dados complexos
+    - Suporte a mensagens em tempo real
+    - Cache de dados
+
+    Contras:
+    - Tamanho dos dados é limitado devido ao armazenamento em memória
+    - Pouco suporte para pesquisas complexas
+    - Gestão de expiração de dados complexa
+
+MongoDB:
+
+    Prós:
+    - Documentos BSON permitem esquemas flexíveis
+    - Escalabilidade, permitindo grande quantidade de dados
+    - Suporta dados e consultas complexas
+    - Índices de consultas
+
+    Contras:
+
+    - Menos eficiente em comparação com o Redis
+    - Não ideal para cache de alta velocidade

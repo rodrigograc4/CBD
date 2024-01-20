@@ -1,0 +1,16 @@
+SELECT JSON * FROM followers;
+
+ [json]
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  {"id_video": 5, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+ {"id_video": 10, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+  {"id_video": 1, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+  {"id_video": 8, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+  {"id_video": 2, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+  {"id_video": 4, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+  {"id_video": 7, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+  {"id_video": 6, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+  {"id_video": 9, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+  {"id_video": 3, "users": ["anacarvalho", "andreasantos", "carlospereira", "davidsousa", "inesoliveira", "joaosilva", "mariagomes", "pedroalmeida", "ricardosilva", "susanarodrigues"]}
+
+(10 rows)

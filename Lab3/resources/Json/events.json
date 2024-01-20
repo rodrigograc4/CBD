@@ -1,0 +1,27 @@
+SELECT JSON * FROM events;
+
+ [json]
+-----------------------------------------------------------------------------------------------------------------------------------------
+    {"id_video": 5, "username": "pedroalmeida", "ts": "2023-11-25 16:42:11.493Z", "instant": "2023-11-25 16:42:11.493Z", "type": "play"}
+   {"id_video": 5, "username": "pedroalmeida", "ts": "2023-11-25 16:42:11.495Z", "instant": "2023-11-25 16:42:11.495Z", "type": "pause"}
+     {"id_video": 2, "username": "mariagomes", "ts": "2023-11-25 16:42:11.480Z", "instant": "2023-11-25 16:42:11.480Z", "type": "pause"}
+      {"id_video": 2, "username": "mariagomes", "ts": "2023-11-25 16:42:11.482Z", "instant": "2023-11-25 16:42:11.482Z", "type": "play"}
+ {"id_video": 9, "username": "susanarodrigues", "ts": "2023-11-25 16:42:11.509Z", "instant": "2023-11-25 16:42:11.509Z", "type": "stop"}
+ {"id_video": 9, "username": "susanarodrigues", "ts": "2023-11-25 16:42:11.511Z", "instant": "2023-11-25 16:42:11.511Z", "type": "play"}
+   {"id_video": 3, "username": "carlospereira", "ts": "2023-11-25 16:42:11.485Z", "instant": "2023-11-25 16:42:11.485Z", "type": "stop"}
+   {"id_video": 3, "username": "carlospereira", "ts": "2023-11-25 16:42:11.488Z", "instant": "2023-11-25 16:42:11.488Z", "type": "play"}
+    {"id_video": 8, "username": "ricardosilva", "ts": "2023-11-25 16:42:11.505Z", "instant": "2023-11-25 16:42:11.505Z", "type": "play"}
+    {"id_video": 8, "username": "ricardosilva", "ts": "2023-11-25 16:42:11.507Z", "instant": "2023-11-25 16:42:11.507Z", "type": "stop"}
+     {"id_video": 10, "username": "davidsousa", "ts": "2023-11-25 16:42:11.514Z", "instant": "2023-11-25 16:42:11.514Z", "type": "play"}
+    {"id_video": 10, "username": "davidsousa", "ts": "2023-11-25 16:42:11.517Z", "instant": "2023-11-25 16:42:11.517Z", "type": "pause"}
+    {"id_video": 6, "username": "andreasantos", "ts": "2023-11-25 16:42:11.496Z", "instant": "2023-11-25 16:42:11.497Z", "type": "play"}
+    {"id_video": 6, "username": "andreasantos", "ts": "2023-11-25 16:42:11.498Z", "instant": "2023-11-25 16:42:11.498Z", "type": "stop"}
+     {"id_video": 4, "username": "anacarvalho", "ts": "2023-11-25 16:42:11.490Z", "instant": "2023-11-25 16:42:11.490Z", "type": "play"}
+     {"id_video": 4, "username": "anacarvalho", "ts": "2023-11-25 16:42:11.491Z", "instant": "2023-11-25 16:42:11.492Z", "type": "stop"}
+    {"id_video": 7, "username": "inesoliveira", "ts": "2023-11-25 16:42:11.500Z", "instant": "2023-11-25 16:42:11.500Z", "type": "stop"}
+    {"id_video": 7, "username": "inesoliveira", "ts": "2023-11-25 16:42:11.503Z", "instant": "2023-11-25 16:42:11.503Z", "type": "play"}
+      {"id_video": 1, "username": "joaosilva", "ts": "2023-11-25 16:42:11.475Z", "instant": "2023-11-25 16:42:11.475Z", "type": "pause"}
+       {"id_video": 1, "username": "joaosilva", "ts": "2023-11-25 16:42:11.477Z", "instant": "2023-11-25 16:42:11.477Z", "type": "play"}
+       {"id_video": 1, "username": "joaosilva", "ts": "2023-11-25 16:42:11.478Z", "instant": "2023-11-25 16:42:11.478Z", "type": "stop"}
+
+(21 rows)

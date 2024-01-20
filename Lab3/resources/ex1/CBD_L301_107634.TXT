@@ -1,0 +1,108 @@
+ -> KEYSPACE
+
+Create a Keyspace:
+    CREATE KEYSPACE tutorialspoint
+    WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+
+Warnings :
+Your replication factor 3 for keyspace tutorialspoint is higher than the number of nodes 1
+
+Drop a Keyspace:
+    DROP KEYSPACE tutorialspoint;
+
+Create a Keyspace(fixed):
+    CREATE KEYSPACE tutorialspoint
+    WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+
+Describe a Keyspace:
+    DESCRIBE keyspaces;
+
+Use a Keyspace:
+    USE tutorialspoint;
+
+
+ -> TABLE
+
+Create a Table:
+    CREATE TABLE tablename(
+    column1 name datatype PRIMARYKEY,
+    column2 name data type,
+    column3 name data type.
+    )
+
+Alter Table:
+    ALTER TABLE table name
+    ADD  new column datatype;
+
+Drop Table:
+    DROP TABLE emp;
+
+
+ -> CRUD
+
+Insert data:
+    INSERT INTO <tablename>
+    (<column1 name>, <column2 name>....)
+    VALUES (<value1>, <value2>....)
+    USING <option>
+
+Update Data:
+    UPDATE <tablename>
+    SET <column name> = <new value>
+    <column name> = <value>....
+    WHERE <condition>
+
+Read Data:
+    SELECT FROM <tablename>
+
+Delete Data:
+    DELETE FROM <identifier> WHERE <condition>;
+
+
+
+
+
+ -> CQLSH INTERATION
+
+    
+    CREATE KEYSPACE pokedex
+    WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+
+    USE pokedex;
+
+    CREATE TABLE pokemon(
+    id          INT     PRIMARY KEY,
+    name        text,
+    type1       text,
+    type2       text
+    );
+
+    INSERT INTO pokemon
+    (id, name, type1, type2) 
+    VALUES 
+    (4, 'Charmander', 'Fire', 'None');
+
+    INSERT INTO pokemon
+    (id, name, type1, type2) 
+    VALUES 
+    (5, 'Charmeleon', 'Fire', 'None');
+
+    INSERT INTO pokemon
+    (id, name, type1, type2) 
+    VALUES 
+    (6, 'Charizard', 'Fire', 'Flying');
+
+    SELECT * FROM pokemon;
+
+        id | name       | type1 | type2
+       ----+------------+-------+--------
+         5 | Charmeleon |  Fire |   None
+         4 | Charmander |  Fire |   None
+         6 |  Charizard |  Fire | Flying
+
+
+    SELECT FROM pokemon WHERE id=4;
+
+         id | name       | type1 | type2
+        ----+------------+-------+-------
+          4 | Charmander |  Fire |  None

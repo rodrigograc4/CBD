@@ -1,0 +1,15 @@
+SELECT JSON * FROM ratings;
+
+ [json]
+----------------------------
+ {"id_video": 5, "rate": 5}
+ {"id_video": 1, "rate": 1}
+ {"id_video": 1, "rate": 5}
+ {"id_video": 2, "rate": 4}
+ {"id_video": 2, "rate": 5}
+ {"id_video": 4, "rate": 2}
+ {"id_video": 4, "rate": 3}
+ {"id_video": 3, "rate": 3}
+ {"id_video": 3, "rate": 4}
+
+(9 rows)
